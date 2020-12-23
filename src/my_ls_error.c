@@ -14,14 +14,13 @@ int my_ls_error(int ac, char *av)
     for (; av[i] != '\0'; i++) {
         if (i != 0 && av[i - 1] == '-') {
             if (av[i] != 'l' && av[i] != 'R' &&
-                av[i] != 't') {
-                    my_error(ac, 2, "Add option\n",1);
+                av[i] != 't' && av[i] != 'h') {
+                    my_printf("ERROR 404 // add option\n");
                     return (84);
             }
         }
-        return (0);
     }
-    return (84);
+    return (0);
 }
 
 // int management_ls(int ac, char **av)

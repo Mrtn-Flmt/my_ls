@@ -46,3 +46,5 @@ char *my_strncpy (char *dest, char const *src, int n);
 int my_error(int ac, int x, char *s, int positif);
 
 int my_perror(char *c);
+
+int my_ls_error(int ac, char *av);

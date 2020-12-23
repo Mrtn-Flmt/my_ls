@@ -5,6 +5,4 @@
 ** my first ls unix command
 */
 
-#include <dirent.h>
-#include <unistd.h>
 #include "./../include/my.h"

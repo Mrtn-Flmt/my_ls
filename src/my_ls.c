@@ -38,13 +38,13 @@ void my_ls(int ac)
 
 int main(int ac, char **av)
 {
-    if (ac > 2) {
-        my_printf("try: ./my_ls -h\n");
-        return (84);
-    } else if (ac == 1) {
+    if (ac == 1) {
         my_ls(ac);
     } else if (ac == 2) {
         my_lsh(ac, av);
+        my_ls_error(ac, av);
+    } else {
+        my_printf("try: ./my_ls -h\n");
+        return (84);
     }
-    return (0);
 }
